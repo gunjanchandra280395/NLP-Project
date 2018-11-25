@@ -10,3 +10,5 @@ Given two sentences S1 and S2, the key is to input each of the sentences to the 
 6. Similarly, use Wikipedia dump files in order to design a program that search the Wikipedia documents for each Sentence. The similarity between the sentences is therefore measured as the number of common Wikipedia documents outputted by the queries (S1 and S2) over the total number of documents outputted by the two queries. Repeat the process of calculating the semantic similarity for your set of chosen academic examples
 7. Use a publicly available database of your choice in order to test the usefulness of this similarity measure (Snippets and Wikipedia based similarity) and compare the results with some state of art measures mentioned in the literature employing your chosen publicly database.
 8. Design a simple GUI interface that allows you to demonstrate your findings
+
+SUNDAY 25.11.2018 new code avalable /Merja
