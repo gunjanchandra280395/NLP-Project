@@ -14,7 +14,7 @@ Given two sentences S1 and S2, the key is to input each of the sentences to the 
 SUNDAY 25.11.2018 new code example available / Merja / in file NLTK_Assignment_15_test1.py
   It does tokenization steps and calculates jaccard distance.
   Who wants to create code for GUI? 
-  But what GUI solution we should use? 
+  But what GUI solution we should use? Jupyter? Tk? Do you now if HTML is possible?
 
 Available as e-book at OY library services:
 Python 3 Text Processing with NLTK 3 Cookbook, Over 80 practical recipes on natural language processing techniques using Python's NLTK 3.0, Jacob Perkins
