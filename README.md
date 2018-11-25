@@ -11,8 +11,8 @@ Given two sentences S1 and S2, the key is to input each of the sentences to the 
 7. Use a publicly available database of your choice in order to test the usefulness of this similarity measure (Snippets and Wikipedia based similarity) and compare the results with some state of art measures mentioned in the literature employing your chosen publicly database.
 8. Design a simple GUI interface that allows you to demonstrate your findings
 
-SUNDAY 25.11.2018 new code avalable /Merja / in file NLTK_Assignment_15_test1.py
-  It does tokenization steps and calculates jaccard distance example
+SUNDAY 25.11.2018 new code example available / Merja / in file NLTK_Assignment_15_test1.py
+  It does tokenization steps and calculates jaccard distance.
   Who wants to create code for GUI? 
   But what GUI solution we should use? 
 
