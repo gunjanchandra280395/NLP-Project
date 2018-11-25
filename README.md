@@ -16,4 +16,9 @@ SUNDAY 25.11.2018 new code example available / Merja / in file NLTK_Assignment_1
   Who wants to create code for GUI? 
   But what GUI solution we should use? 
 
+Available as e-book at OY library services:
+Python 3 Text Processing with NLTK 3 Cookbook, Over 80 practical recipes on natural language processing techniques using Python's NLTK 3.0, Jacob Perkins
+
+
+
 
