@@ -12,3 +12,8 @@ Given two sentences S1 and S2, the key is to input each of the sentences to the 
 8. Design a simple GUI interface that allows you to demonstrate your findings
 
 SUNDAY 25.11.2018 new code avalable /Merja
+  It does tokenization steps and calculates jaccard distance example
+  Who wants to create code for GUI? Somebody can start working for that?
+  But what GUI solution we should use? 
+
+
