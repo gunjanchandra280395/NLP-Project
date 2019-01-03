@@ -31,7 +31,7 @@ resultsWikiSimilarityStringVariable  = StringVar()
 resultsWikiSimilarityStringVariable.set("Over 9001")
 # Callbacks
 def submitCallback(): # This function will get called when user presses the 
-	global numberOfEnteredSentences
+	global numberOfEnteredSentences, S1, S2
 	
 	numberOfEnteredSentences = numberOfEnteredSentences + 1
 
@@ -39,10 +39,8 @@ def submitCallback(): # This function will get called when user presses the
 
 	if numberOfEnteredSentences == 1:
 		S1 = enteredSentence
-		print(S1)
 	elif numberOfEnteredSentences == 2:
 		S2 = enteredSentence
-		print(S2)
 
 	sentenceInputEntryStringVariable.set("") # Clear the input field
 	instructionsLabelStringVariable.set("Enter second sentence") # Update instructions
@@ -88,6 +86,11 @@ def removeInsertSentencesLayout():
 
 
 def displayResultsLayout():
+	# Update labels
+	resultsFirstSentenceStringVariable.set(S1)
+	resultsSecondSentenceStringVariable.set(S2)
+
+	# Layout elements
 	Label(mainWindow, text="S1", font=("Arial Bold", 20)).grid(row=0, column=0)
 	Label(mainWindow, text="S2", font=("Arial Bold", 20)).grid(row=0, column=1)
 
