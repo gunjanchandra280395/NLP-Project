@@ -2,7 +2,7 @@ from tkinter import *
 
 mainWindow = Tk()
 mainWindow.title("Welcome to project number 18")
-mainWindow.geometry('350x200')
+mainWindow.geometry('400x400')
 
 # State
 numberOfEnteredSentences = 0
@@ -47,49 +47,51 @@ def submitCallback(): # This function will get called when user presses the
 	
 	if numberOfEnteredSentences == 2:
 		# Line below is mock functionality: we should query the api here and then update the result resultLabelStringVariable
-		result.set("test: ")
-		resultLabelStringVariable.set("blaablaa")
+		#result.set("test: ")
+		#resultLabelStringVariable.set("blaablaa")
 		removeInsertSentencesLayout()
 		displayResultsLayout()
 
 # Insert sentences layout elements
-instructionLabel = Label(mainWindow, text="Enter the first sentence:", textvariable=instructionsLabelStringVariable, font=("Arial Bold", 20))
-resultLabel2 = Label(mainWindow, textvariable=result)
-resultLabel = Label(mainWindow, text="Result:", textvariable=resultLabelStringVariable)
+instructionLabel = Label(mainWindow, textvariable=instructionsLabelStringVariable, font=("Arial Bold", 20))
 sentenceInputEntry = Entry(mainWindow, textvariable=sentenceInputEntryStringVariable)
-submitButton = Button(mainWindow, text="Submit", width=10, command=submitCallback)
+#resultLabel2 = Label(mainWindow, textvariable=result)
+#resultLabel = Label(mainWindow, textvariable=resultLabelStringVariable)
+submitButton = Button(mainWindow, width=10, command=submitCallback)
 
 
 def displayInsertSentencesLayout():	
 	instructionLabel.grid(column=0, row=0)
 	#instructionLabel.pack()
 	
-	sentenceInputEntry.grid(column=1, row=0)
+	sentenceInputEntry.grid(column=0, row=1)
 	sentenceInputEntry.focus()
 	#sentenceInputEntry.pack()
 	
 	#resultLabel2.pack()
-	resultLabel2.grid(column=2, row=0)
-	
-	resultLabel.grid(column=3, row=0)
+	#resultLabel2.grid(column=2, row=0)
+
+
+	#resultLabel.grid(column=3, row=0)
 	#resultLabel.pack()
 	
-	submitButton.grid(column=4, row=0)
+	submitButton.grid(column=0, row=3)
 	#submitButton.pack()
 
 
 def removeInsertSentencesLayout():
-	instructionLabel.pack_forget()
-	sentenceInputEntry.pack_forget()
-	resultLabel2.pack_forget()
-	resultLabel.pack_forget()
-	submitButton.pack_forget()
+	instructionLabel.grid_forget()
+	sentenceInputEntry.grid_forget()
+	#resultLabel2.grid_forget()
+	#resultLabel.grid_forget()
+	submitButton.grid_forget()
 
 
 def displayResultsLayout():
 	# Update labels
 	resultsFirstSentenceStringVariable.set(S1)
 	resultsSecondSentenceStringVariable.set(S2)
+	# set variables here############
 
 	# Layout elements
 	Label(mainWindow, text="S1", font=("Arial Bold", 20)).grid(row=0, column=0)
