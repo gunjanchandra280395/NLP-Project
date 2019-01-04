@@ -62,19 +62,20 @@ submitButton = Button(mainWindow, text="Submit", width=10, command=submitCallbac
 
 def displayInsertSentencesLayout():	
 	instructionLabel.grid(column=0, row=0)
-	instructionLabel.pack()
+	#instructionLabel.pack()
 	
 	sentenceInputEntry.grid(column=1, row=0)
 	sentenceInputEntry.focus()
-	sentenceInputEntry.pack()
+	#sentenceInputEntry.pack()
 	
-	resultLabel2.pack()
+	#resultLabel2.pack()
+	resultLabel2.grid(column=2, row=0)
 	
-	resultLabel.grid(column=2, row=0)
-	resultLabel.pack()
+	resultLabel.grid(column=3, row=0)
+	#resultLabel.pack()
 	
-	submitButton.grid(column=3, row=0)
-	submitButton.pack()
+	submitButton.grid(column=4, row=0)
+	#submitButton.pack()
 
 
 def removeInsertSentencesLayout():
